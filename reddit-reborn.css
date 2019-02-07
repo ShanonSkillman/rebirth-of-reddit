@@ -1,7 +1,9 @@
 body {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   font-family: "Oswald", sans-serif;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 500px) {
@@ -10,19 +12,68 @@ body {
   }
 }
 
+#postUps {
+  margin-bottom: -155px;
+}
+
+.postThumbsUp {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
+#buttons {
+  background: black;
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+  display: flex;
+}
+
+#homeButton {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+#natureButton {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+#spaceButton {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+#futureButton {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
 #posts {
   border-style: solid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .title {
   border-style: dotted;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 24%;
   height: 50%;
   width: 50%;
   text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
 }
 
 img {
